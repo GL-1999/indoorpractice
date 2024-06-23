@@ -17,10 +17,15 @@ public class Student {
         this.name = newName;
     }
 
+    public void updateAge(int newAge) {
+        this.age = newAge;
+    }
+
     public static void main(String[] args) {
         Student student1 = new Student("Alice", 20, "S12345");
         student1.displayDetails();
         student1.updateName("Alice Johnson");
+        student1.updateAge(21);
         student1.displayDetails();
     }
 }
